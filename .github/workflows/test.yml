@@ -1,0 +1,30 @@
+name: OnComment
+
+on: [issue_comment]
+
+jobs: 
+  test:
+    if: github.actor == 'annsudo' || github.actor == 'monperrus' || github.actor == 'bbaudry' || github.actor == 'SophieHYe' || github.actor == 'cesarsotovalero' || github.actor == 'khaes-kth'  || github.actor == 'Deee92'
+    runs-on: ubuntu-latest  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Publish comment
+        uses: ./ # Uses an action in the root directory
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TENOR_TOKEN: ${{ secrets.TENOR_TOKEN }}
+      - name: Post to Discord now
+        uses: annsudo/discord-comments@master
+        with:
+           DISCORD_WEBHOOK_ID: ${{ secrets.DISCORD_WEBHOOK_ID }}
+           DISCORD_WEBHOOK_TOKEN: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}    
+
+  testNotPromited:
+    if: github.actor != 'annsudo' && github.actor != 'monperrus' && github.actor != 'bbaudry' && github.actor != 'SophieHYe' && github.actor != 'cesarsotovalero' && github.actor != 'khaes-kth'  && github.actor != 'Deee92'
+    runs-on: ubuntu-latest  
+    steps:
+      - name: No priveledge
+        run: |
+          echo "Hi there, I am a test:"
+          echo "You can use me to check that only allowed users can run me ;)"
