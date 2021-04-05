@@ -1,4 +1,4 @@
-# 🚀  Github Comment to Discord Action: 
+# 🚀  Github Comment to Discord - Action 
 
 This is a customize action for an awesome university DevOps course with a goal to automate Profesors and Teaching Assistant work 💥
  
