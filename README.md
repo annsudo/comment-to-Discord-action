@@ -29,7 +29,8 @@ This automation is structured as 2 parts with goal of making it reusable for oth
 
 
 ## Features
-- ✅  Tracking comments on actions and PR 
+- ✅  Tracking comments on issues
+- ✅  Tracking comments on PRs
 - ✅  Chosing spesific user/ users to track from
 - ✅  Posting customized-formed comments on discord
 - ✅  Posting a notification message on Github to assure that everything worked as expected
@@ -77,7 +78,7 @@ GITHUB_TOKEN --> your personal token. Already created if you are a github-user
 
 TENOR_TOKEN --> token for GIFs. Picked up tree from [Tenor](https://tenor.com/)
 
-DISCORD_WEBHOOK_ID --> webhook for discord id channel (can be created by adminof that channel)
+DISCORD_WEBHOOK_ID --> webhook for discord id channel (can be created by admin of that channel)
 
-DISCORD_WEBHOOK_TOKEN --> webhook token for discord channel (can be created by adminof that channel)
+DISCORD_WEBHOOK_TOKEN --> webhook token for discord channel (can be created by admin of that channel)
 
