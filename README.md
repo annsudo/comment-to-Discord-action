@@ -9,7 +9,7 @@ This is a customize action for an awesome university DevOps course with a goal t
 
 
 ## About
-I structured this automation as 2 parts with goal of making it reusable for other users. 1st part is an action that is useful for all github+discord lovers: it messages on both PR and Issues and send them to Discord beautifully formated. 2nd part AKA Head project is more corse-spesific where I show how to filter actors who can trigger this action and combine it with some fun gifs.
+I structured this automation as 2 parts with goal of making it reusable for other users. [1st part](https://github.com/annsudo/discord-comments) is an action that is useful for all github+discord lovers: it messages on both PR and Issues and send them to Discord beautifully formated. [2nd part](https://github.com/annsudo/comment-to-Discord-action) AKA Head project is more corse-spesific where I show how to filter actors who can trigger this action and combine it with some fun gifs.
 
 
 
