@@ -1,0 +1,29 @@
+{
+  "name": "oncomment-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "git": " npm run build  && git add -A && git commit -m \"commit\" && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annsudo/onComment-action.git"
+  },
+  "author": "annsudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/annsudo/onComment-action/issues"
+  },
+  "homepage": "https://github.com/annsudo/onComment-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@vercel/ncc": "^0.27.0",
+    "fetch": "^1.1.0",
+    "node": "^15.12.0",
+    "node-fetch": "^2.6.1"
+  }
+}
